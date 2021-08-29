@@ -17,8 +17,8 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         User::factory()
-        ->times(50)
-        ->has(Post::factory()->count(30))
+        ->times(10)
+        ->has(Post::factory()->count(5))
         ->create();
     }
 }
